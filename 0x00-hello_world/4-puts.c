@@ -1,6 +1,7 @@
 #include <stdio.h>
 /*
- * Printing a phrase using C coding.
+ * main - Printing a phrase using C coding.
+ * return: 0 if everything worked properly
  */
 int main(void)
 {
