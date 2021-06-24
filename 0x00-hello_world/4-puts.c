@@ -1,9 +1,9 @@
 #include <stdio.h>
 /*
- * main - Printing a phrase using C coding.
- * return: 0 if everything worked properly
+ * main - Prints \"Programming is like building a multilingual
+ * Return: 0 if everything executed properly
  */
-int main(void)
+main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
