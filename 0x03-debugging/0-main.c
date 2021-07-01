@@ -1,9 +1,11 @@
 #include "holberton.h"
+
 /**
  * main - test to see if function prints int
  * that is positive or negative
  * Return: 0
- */
+
+*/
 int main(void)
 {
 	int i;
