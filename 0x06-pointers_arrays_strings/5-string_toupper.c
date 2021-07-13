@@ -10,8 +10,8 @@ char *string_toupper(char *string)
 	int i = 0;
 	int j;
 
-	while (string[i] !='\0')
-			i++;
+	while (string[i] != '\0')
+		i++;
 
 	for (j = 0; j < i; j++)
 	{
