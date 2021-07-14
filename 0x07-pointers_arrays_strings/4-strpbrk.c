@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
- * _strpbrk -
+ * _strpbrk - Function that searches a string
+ * for any of a set of bytes
  * @s: The string being checked
  * @accept: character
  * Return: 0, if everything executes properly
