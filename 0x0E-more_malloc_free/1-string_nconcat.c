@@ -4,9 +4,9 @@
  * string_nconcat - Function that concatenates
  * two strings.
  * @s1: first string being concatted
- * @S2: second string being concatted
+ * @s2: second string being concatted
  * @n: int value of needed space
- * @return: concatenated string
+ * Return: concatenated string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -14,15 +14,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int j;
 	unsigned int k;
 	char *newstr = NULL;
-	
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	for (i = 0; s1[i] != '\0'; i++);
+	for (i = 0; s1[i] != '\0'; i++)
+		;
 
-	for (j = 0; s2[j] != '\0'; j++);
+	for (j = 0; s2[j] != '\0'; j++)
+		;
 
 	if (j <= n)
 		n = j;
