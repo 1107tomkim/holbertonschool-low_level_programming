@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- *
- *
- *
+ * binary_to_uint - Function that converts
+ * a binary num to unsigned int
+ * @b: The string being tested
+ * Return: Values
  */
 unsigned int binary_to_uint(const char *b)
 {
