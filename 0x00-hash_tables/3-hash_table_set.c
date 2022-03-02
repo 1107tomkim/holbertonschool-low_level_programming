@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * newkey_create - Creates new key-val
+ * create_ht - Creates new key-val
  * @key: Key to new pair
  * @value: Value to new pair
  * Return: New pair
