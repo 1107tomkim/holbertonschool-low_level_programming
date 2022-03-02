@@ -44,7 +44,7 @@ hash_node_t *create_ht(const char *key, const char *value)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int nli = 0;
-	hash_node_t *new = NULL, *next = NULL, *last = NULL;
+	hash_node_t *new_table = NULL, *next = NULL, *last = NULL;
 
 	if (key == NULL || value == NULL || ht == NULL || key[0] == '\0')
 		return (0);
@@ -61,20 +61,20 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (next == ht->array[nli])
 		{
-			new = hash_table_create(key, value);
-			if (new == NULL)
+			new_table = create_ht(key, value);
+			if (new_table == NULL)
 				return (0);
 			if (next == ht->array[nli])
 			{
-				new->next = next;
-				ht->array[nli] = new;
+				new_table->next = next;
+				ht->array[nli] = new_table;
 			}
 			else if (next == NULL)
-				last->next = new;
+				last->next = new_table;
 			else
 			{
-				new->next = next;
-				last->next = new;
+				new_table->next = next;
+				last->next = new_table;
 			}
 		}
 	}
