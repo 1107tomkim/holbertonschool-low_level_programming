@@ -17,7 +17,7 @@ int advanced_binary(int *array, size_t size, int value)
 
 /**
  * bhelper - uses recursion to search for a val
- * @array: array to search 
+ * @array: array to search
  * @value: value being searched
  * @low: low bound index
  * @high: high bound index
@@ -45,7 +45,7 @@ int bhelper(int *array, int value, size_t low, size_t high)
  * print_array - prints array
  * @array: array to print
  * @low: low bound index
- * @hih: high bound index
+ * @high: high bound index
  */
 void print_array(int *array, size_t low, size_t high)
 {
